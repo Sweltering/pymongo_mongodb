@@ -1,0 +1,18 @@
+mongoDB是一个基于分布式文件存储的NoSQL数据库，在处理海量数据的时候比MySQL更有优势
+
+mongodb三元素:
+1、数据库（database）：就是关系型数据库中的database。
+2、集合（collection）：就是关系型数据库中的表，可以存储多个文档，结构可以不固定：
+    {"name":"wj","age":23}
+    {"title":"xxx","price":20.8}
+3、文档（document）:就是关系型数据库中的一行，文档是一个对象，由键值对构成，是json的扩展形式。
+
+mongodb基本操作命令：
+1、db：查看当前的数据库
+2、show dbs：查看所有的数据库
+3、use 数据库名：切换数据库，如果数据库不存在，则创建一个
+4、db.集合名.insert(value): 添加数据到指定的集合中
+    db.qa.insert({'username':'wj','age':'23'})
+5、db.dropDatabase(): 删除当前指向的数据库
+6、db.集合名.find(): 从指定的集合中查找数据
+    db.qa.find()
